@@ -46,16 +46,6 @@ model.compile(loss='sparse_categorical_crossentropy',
 # Train the model
 model.fit(padded_sequences, labels, epochs=15, verbose=1)
 
-# Evaluate the model
-evaluation = model.evaluate(padded_sequences, labels, verbose=0)
-
-# Extract loss and accuracy
-loss = evaluation[0]
-accuracy = evaluation[1]
-
-# Print loss and accuracy
-print("Loss:", loss)
-print("Accuracy:", accuracy)
 
 # Test the model
 test_texts = ["The price was too high for the quality", "The interface is user-friendly", "I'm satisfied"]
@@ -84,3 +74,14 @@ predictions = model.predict(padded_test_sequences)
 for i, text in enumerate(test_texts):
     print(f"Text: {text}, Predicted Sentiment: {np.argmax(predictions[i])}")
 
+
+# Evaluate the model
+evaluation = model.evaluate(padded_sequences, labels, verbose=0)
+
+# Extract loss and accuracy
+loss = evaluation[0]
+accuracy = evaluation[1]
+
+# Print loss and accuracy
+print("Loss:", loss)
+print("Accuracy:", accuracy)
