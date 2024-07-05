@@ -23,3 +23,4 @@ weather_data.to_csv('weather_data.csv', index=False)
 
 print("Sample weather data for past two weeks:")
 print(weather_data)
+
