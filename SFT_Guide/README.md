@@ -1,0 +1,1 @@
+A notebook for fine-tuning Llama 3 on the 1944 Sabotage Manual by the CIA. Only for educational purposes, a tutorial is coming up on [Ordinary Intelligence Co.](https://ordinaryintelligence.substack.com/) with step-by-step details. 
